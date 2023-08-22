@@ -1,0 +1,31 @@
+{% extends "implm/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+
+<div class="cont">
+    <div id = "chatbox" class = "chat">
+        <div class = "col">
+            <div class = "msg-row">
+                <div class = "msg-incoming"> 
+                    <h2> AI-Assistant </h2>
+                    <p>What do you want to do</p>
+                </div>
+                <img src="{% static 'implm/images/iconr.png' %}" class="msg-img1" width="100px">
+            </div>
+        
+        </div>
+        <div class="envoi">
+            <textarea id="msg" type="text" name="message" placeholder="Type your message here..."></textarea>
+            <input id="l" type="file" name="file" multiple hidden>
+            <label for="l"><i class="fa-solid fa-file" style="cursor:pointer;" ></i></label>
+            {% csrf_token %}
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock%}

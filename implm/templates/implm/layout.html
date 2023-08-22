@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Auto gpt</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{%static 'implm/css/styles.css'%}" rel="stylesheet">
+    <script src="{% static 'implm/js/script.js' %}" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://kit.fontawesome.com/76281a8951.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+    </style>
+</head>
+<body style="background-color:#001C30;">
+    <div class="header">
+        <h1 class="title">Auto-GPT</h1>
+        </div>
+        {% block body %}
+        {% endblock%}
+</body>
+</html>

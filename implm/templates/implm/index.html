@@ -1,0 +1,31 @@
+{% extends "implm/layout.html" %}
+{% load static %}
+
+
+{% block body %}
+
+<div class="bg">
+    <div class="bs">
+        <div class="containerh" style="gap:18px;">
+            <div class="par">
+                <h2 style="text-align:center; color:white;">Paragraph</h2>
+                <p style="color:white;">Auto-GPT® goes beyond traditional language generation tools by incorporating data from multiple sources, including news articles, and scientific data sources. This allows the system to generate text that is not only accurate but also reflects the latest trends and developments in your field.</p>
+            </div>
+            <img src="{% static "implm/images/rbt.jpeg" %}" alt="" width="350px" padding="15px"  >
+        </div>
+        <div class="containerh" style="gap:18px;">
+            <div class="par">
+                <h2 style="color:white;">Column 1 </h2>
+                <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                <a href="{% url 'manual' %}"><input type="button" class="button" value="Automatic"></a>
+            </div>
+            <div class="par">
+                <h2 style="color:white;">Column 2 </h2>
+                <p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                <a href="{% url 'manual' %}"><input type="button" class="button" value="Manual"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock%}

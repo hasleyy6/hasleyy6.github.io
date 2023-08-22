@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+
+.bs{
+    margin-left: 10%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+}
+.containerh{
+    max-width: 900px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    background-color:#001C30;
+    padding:20px;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.containerv{
+    display: flex;
+    column-gap:10px;
+    flex-direction: column;
+    max-width:400px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#001C30;
+}
+.header {
+    background-color: #001C30;
+    padding: 20px;
+    text-align: center;
+}
+.title{
+    color: #DAFFFB;
+    font-family: "Times New Roman", Times, serif;
+}
+.par{
+    float: left;
+    width:400px;
+}
+.column{
+    float: left;
+    width: 45%;
+    padding: 15px;
+}
+  
+.bg{
+      background-color:#001C30;
+      padding:20px;
+}
+/* Clear floats after the columns */
+.row::after {
+content: "";
+display: table;
+clear: both;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+}
+input[type=button]{
+    background-color: #64CCC5;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    border-radius:4px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+  
+.button {
+    transition-duration: 0.4s;
+}
+  
+.button:hover {
+    background-color: #176B87; 
+    color: white;
+}
+
+#mar{
+    color: #001C30;
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #001C30;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #64CCC5;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+  
+#mar:focus {
+    width: 100%;
+    height: 150px;
+}
+
+#sub{
+    background-color: #64CCC5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+/*manual*/
+
+.cont{
+    width:100%;
+    height:100vh;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+
+}
+
+#chatbox{
+    background: #071952;
+    width:60%;
+    min-width:250px;
+    display: flex;
+    border-radius: 3px;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    max-height: 450px;
+}
+
+.col{
+    flex:1;
+
+    overflow-y: auto;
+}
+
+#msg{
+    color: #fff;
+    box-sizing: border-box;
+    border:0;
+    outline:none;
+    padding: 20px 40px;
+    background: rgba(255,255, 255, 0.1);
+    width:100%;
+    font-size: 16px;
+    font-weight: 300;
+    border-radius: 4px;
+    max-height: 50px;
+    margin-bottom : 25px;
+    margin-left:25px;
+    overflow: hidden;
+}
+
+#send-btn{
+    border-radius:4px;
+    margin: 4px 2px;
+    cursor: pointer;
+    align-self:center;
+}
+
+.envoi{
+    display:flex;
+    flex-direction: row;
+}
+
+::placeholder{
+    color: #fff;
+}
+
+.col2{
+    flex-basis: 250px;
+    background: rgba(255,255, 255, 0.1);
+}
+
+.col2 h3{
+    text-align:center;
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+.col2 ul{
+    list-style: none;
+    padding: 30px;
+}
+
+.col2 ul li{
+    padding: 5px 0;
+}
+
+
+.msg-row{
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+.msg-row2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 40px;
+}
+.msg-incoming{
+    background: rgba(255,255, 255, 0.1);
+    padding:20px 40px;
+    border-radius: 8px;
+    flex-basis: 70%;
+    font-weight: 300;
+}
+
+.msg-outgoing{
+    background: rgba(255,255, 255, 0.1);
+    padding:20px 40px;
+    border-radius: 8px;
+    flex-basis: 70%;
+    font-weight: 300;
+}
+
+.msg-incoming h2{
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.msg-img1{
+    max-width:100px;
+    margin: 0 20px;
+}
+
+.msg-img2{
+    max-width:50px;
+    margin: 0 20px;
+}
+
